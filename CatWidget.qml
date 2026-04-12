@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Effects
 import Quickshell
 import Quickshell.Io
 import qs.Common
@@ -92,6 +93,11 @@ PluginComponent {
                 height: root.catSize
                 fillMode: Image.PreserveAspectFit
                 smooth: true
+                layer.enabled: true
+                layer.effect: MultiEffect {
+                    colorization: 1
+                    colorizationColor: Theme.surfaceText
+                }
                 anchors.verticalCenter: parent.verticalCenter
             }
 
@@ -119,6 +125,11 @@ PluginComponent {
                 height: root.catSize
                 fillMode: Image.PreserveAspectFit
                 smooth: true
+                layer.enabled: true
+                layer.effect: MultiEffect {
+                    colorization: 1
+                    colorizationColor: Theme.surfaceText
+                }
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
@@ -164,6 +175,11 @@ PluginComponent {
                             height: 96
                             fillMode: Image.PreserveAspectFit
                             smooth: true
+                            layer.enabled: true
+                            layer.effect: MultiEffect {
+                                colorization: 1
+                                colorizationColor: Theme.surfaceText
+                            }
                         }
                     }
 
